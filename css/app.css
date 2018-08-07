@@ -3,7 +3,7 @@
     font-family: helvetica;
 }
 
-.cat-list {
+.list {
   background-color: #b5dbe8;
   width: 400px;
   margin: auto;
@@ -11,31 +11,32 @@
   border-radius: 5px;
 }
 
-.cat-list ul{
+.list ul{
   list-style-type: none;
   padding: 3px 0px;
 }
 
-.cat-list li {
+.list li {
     display: inline;
     padding-left: 5px;
 }
 
-.cat-card {
+#cat-card {
   background-color: #d6ebf2;
   width: 400px;
   margin: auto;
   margin-top: 15px;;
   border-radius: 5px;
+}
 
-}.cat-name {
+#cat-name {
   padding: 15px;
   font-family: 'Give You Glory', cursive;
   font-weight: bold;
   font-size: 1.5em;
 }
 
-.image-container {
+#image-container {
   background-color: white;
   width: 350px;
   margin: auto;
@@ -43,6 +44,6 @@
   border: solid, grey, 3px;
 }
 
-.clicker-counter {
+#clicker-counter {
   padding-bottom: 8px;
 }

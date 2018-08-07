@@ -1,7 +1,8 @@
-// the model is holding all the data
+// grabbing all relevant page elements for future use
+let catList = document.getElementById("list-details");
 
-let model = {
-  let allCats = [
+
+let allCats = [
     { name: 'Mieze',
       picture: 'img/mieze.png',
       clickCount: 0
@@ -22,15 +23,15 @@ let model = {
       picture: 'img/hank.png',
       clickCount: 0
     }
-  ]
-};
+  ];
 
-// the octopus is separating and communicating between model and view.
-// It also includes the init function!
+// adding elements to cat list
 
-let octopus = {
-
-};
-
-
-// View -- actually 2 separate views. One shows the cat list, one shows the cat card
+function renderList(){
+  for (let i = 0; i < allCats.length; i++ ){
+    newLi = document.createElement("li");
+    newLi.innerHTML = allCats[i].name
+    catList.appendChild(newLi);
+    };
+  }
+renderList();
