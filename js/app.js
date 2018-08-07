@@ -3,23 +3,23 @@
 let model = {
   let allCats = [
     { name: 'Mieze',
-      picture: 'img/cat1.jpg',
+      picture: 'img/mieze.png',
       clickCount: 0
     },
     { name: 'Feathers',
-      picture: 'img/cat2',
+      picture: 'img/feathers.png',
       clickCount: 0
     },
     { name: 'Penelope',
-      picture: 'img/cat3.jpg',
+      picture: 'img/penelope.png',
       clickCount: 0
     },
     { name: 'Lala',
-      picture: 'img/cat4.jpg',
+      picture: 'img/lala.png',
       clickCount: 0
     },
     { name: 'Hank',
-      picture: 'img/cat5.jpg',
+      picture: 'img/hank.png',
       clickCount: 0
     }
   ]
