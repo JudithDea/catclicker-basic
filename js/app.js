@@ -3,6 +3,7 @@ let catList = document.getElementById("list-details");
 let catImage = document.getElementById("image-container");
 let catName = document.getElementById("cat-name");
 let catCount = document.getElementById("clicker-counter");
+let x = 0;
 
 // listing all cats information
 let allCats = [
@@ -46,10 +47,13 @@ function renderList(){
   }
 
 function renderCard(){
-  let starterCatName = allCats[0].name;
-  let starterCatPicture = allCats[0].picture;
-  let starterCatCount = allCats[0].clickCount;
-  catName.innerText = starterCatName;
-  catImage.innerHTML += "<img src="+starterCatPicture+" />";
-  catCount.innerText = starterCatCount;
+  catName.innerText = allCats[x].name;
+  catImage.innerHTML += "<img src="+allCats[x].picture+" />";
+  catCount.innerText = allCats[x].clickCount;
+
+  catImage.addEventListener("click", function(){
+    allCats[x].clickCount +=1;
+    console.log("click");
+    catCount.innerText = allCats[x].clickCount;
+  })
 }
