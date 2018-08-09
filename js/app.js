@@ -36,6 +36,7 @@ window.onload = function(){
 function init (){
   renderList();
   renderCard();
+  getNames();
 }
 
 function renderList(){
@@ -65,4 +66,16 @@ catImage.addEventListener("click", function(){
   catCount.innerText = allCats[x].clickCount;
 })
 
-let catArray = document.getElementsByTagName("li");
+let catNameArray = []
+function getNames(){
+  for (let i = 0; i < allCats.length; i++){
+    catNameArray.push(allCats[i].name);
+  }
+};
+
+let clickedName = catList.addEventListener("click",function(e){
+  console.log(e.target.innerText);
+  clickedName = (e.target.innerText);
+  x = catNameArray.indexOf(clickedName);
+  renderCard();
+})
