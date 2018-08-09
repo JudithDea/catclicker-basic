@@ -1,3 +1,12 @@
+body {
+  background: #DAF7A6;
+  background-image:
+    radial-gradient(#99CC8C 20%, transparent 0),
+    radial-gradient(#99CC8C 20%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
 .content {
     text-align: center;
     font-family: helvetica;
@@ -18,7 +27,7 @@
 
 .list li {
     display: inline;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 #cat-card {
@@ -29,7 +38,7 @@
   border-radius: 5px;
 }
 
-#cat-name {
+.nameFont {
   padding: 15px;
   font-family: 'Give You Glory', cursive;
   font-weight: bold;
@@ -44,6 +53,6 @@
   border: solid, grey, 3px;
 }
 
-#clicker-counter {
-  padding-bottom: 8px;
+.counter-text {
+  padding-bottom: 20px;
 }

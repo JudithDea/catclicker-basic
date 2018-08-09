@@ -1,7 +1,10 @@
 // grabbing all relevant page elements for future use
 let catList = document.getElementById("list-details");
+let catImage = document.getElementById("image-container");
+let catName = document.getElementById("cat-name");
+let catCount = document.getElementById("clicker-counter");
 
-
+// listing all cats information
 let allCats = [
     { name: 'Mieze',
       picture: 'img/mieze.png',
@@ -25,7 +28,14 @@ let allCats = [
     }
   ];
 
-// adding elements to cat list
+window.onload = function(){
+  init();
+}
+
+function init (){
+  renderList();
+  renderCard();
+}
 
 function renderList(){
   for (let i = 0; i < allCats.length; i++ ){
@@ -34,4 +44,12 @@ function renderList(){
     catList.appendChild(newLi);
     };
   }
-renderList();
+
+function renderCard(){
+  let starterCatName = allCats[0].name;
+  let starterCatPicture = allCats[0].picture;
+  let starterCatCount = allCats[0].clickCount;
+  catName.innerText = starterCatName;
+  catImage.innerHTML += "<img src="+starterCatPicture+" />";
+  catCount.innerText = starterCatCount;
+}
