@@ -46,14 +46,23 @@ function renderList(){
     };
   }
 
+function emptyCard(){
+  catName.innerText = "";
+  catImage.innerHTML = "";
+  catCount.innerText = "";
+}
+
 function renderCard(){
+  emptyCard();
   catName.innerText = allCats[x].name;
   catImage.innerHTML += "<img src="+allCats[x].picture+" />";
   catCount.innerText = allCats[x].clickCount;
-
-  catImage.addEventListener("click", function(){
-    allCats[x].clickCount +=1;
-    console.log("click");
-    catCount.innerText = allCats[x].clickCount;
-  })
 }
+
+catImage.addEventListener("click", function(){
+  allCats[x].clickCount +=1;
+  console.log("click");
+  catCount.innerText = allCats[x].clickCount;
+})
+
+let catArray = document.getElementsByTagName("li");
