@@ -28,6 +28,7 @@ body {
 .list li {
     display: inline;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 #cat-card {
@@ -44,6 +45,9 @@ body {
   font-weight: bold;
   font-size: 1.5em;
 }
+#click-me {
+  font-size: 16px;
+}
 
 #image-container {
   background-color: white;
@@ -51,6 +55,7 @@ body {
   margin: auto;
   padding-bottom: 20px;
   border: solid, grey, 3px;
+  cursor: pointer;
 }
 
 .counter-text {

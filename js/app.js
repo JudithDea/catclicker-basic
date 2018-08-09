@@ -74,8 +74,11 @@ function getNames(){
 };
 
 let clickedName = catList.addEventListener("click",function(e){
-  console.log(e.target.innerText);
-  clickedName = (e.target.innerText);
-  x = catNameArray.indexOf(clickedName);
-  renderCard();
+  // console.log(e.target);
+  // console.log(e.target.innerText);
+  if(e.target.tagName == 'LI'){
+    clickedName = (e.target.innerText);
+    x = catNameArray.indexOf(clickedName);
+    renderCard();
+  };
 })
